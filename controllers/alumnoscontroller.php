@@ -30,7 +30,7 @@ class alumnosController extends Controller
   {
     if (isset($_POST['nombre']) && isset($_POST['direccion']) && isset($_POST['telefono']) && isset($_POST['laboratorio1']) && isset($_POST['laboratorio2']) && isset($_POST['parcial'])) {
       $this->alumnos->add($_POST['nombre'], $_POST['direccion'], $_POST['telefono'], $_POST['laboratorio1'], $_POST['laboratorio2'], $_POST['parcial']);
-      $info = array('success'=>false, 'msg'=>'Noticia agregada con exito');
+      $info = array('success'=>false, 'msg'=>'Alumno agregado con exito');
     } else {
       $info = array('success'=>false, 'msg'=>'Los parametros nombre, direccion, telefono, laboratorios y parcial son obligatorios');
     }
